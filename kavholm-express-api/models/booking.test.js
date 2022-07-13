@@ -86,4 +86,8 @@ describe("Booking", () => {
       expect(bookings).toHaveLength(0)
     })
   })
+
+
+
+
 })

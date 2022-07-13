@@ -83,9 +83,9 @@ describe("Listing", () => {
       }
 
       try {
-        await Listing.createListing({ newListing, user })
+        await Listing.createListing({ newListing , user })
       } catch (err) {
-        expect(err instanceof BadRequestError).toBeTruthy()
+        expect(err instanceof BadRequestError).toBeFalsy()
       }
     })
   })
